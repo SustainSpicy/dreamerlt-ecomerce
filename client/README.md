@@ -1,9 +1,5 @@
 # Dreamerly by OYELEKE ISREAL TIMILEHIN
 
-<!-- ## Test server is hosted at:
-
-## Test Ui is hosted at: -->
-
 - [Key Features](#key-features)
 - [Technologies used](#technologies-used)
 - [Client](#client)

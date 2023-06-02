@@ -25,7 +25,7 @@ const Home = () => {
   const [open, setOpen] = useState(false);
   const [modalData, setModalData] = useState(null);
 
-  const cards = useSelector((state) => state.global.products);
+  const products = useSelector((state) => state.global.products);
   const user = useSelector((state) => state.global.user);
 
   const handleModalOpen = (selectedItem) => {
@@ -75,8 +75,8 @@ const Home = () => {
       <Container sx={{ py: 8 }} maxWidth="md">
         {/* End hero unit */}
         <Grid container spacing={4}>
-          {cards?.map((card) => {
-            const { name, price } = card;
+          {products?.map((card) => {
+            const { name, price, seller } = card;
             return (
               <Grid item key={card.id} xs={12} sm={6} md={4}>
                 <Card
@@ -162,6 +162,7 @@ const Home = () => {
             <Typography id="modal-modal-description" sx={{ mt: 2 }}>
               {modalData.description}
             </Typography>
+            <Typography>Seller: {modalData.seller}</Typography>
           </>
         )}
       </ModalWrapper>

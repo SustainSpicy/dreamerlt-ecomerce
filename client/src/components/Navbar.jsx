@@ -74,7 +74,7 @@ const Navbar = ({ user, isSidebarOpen, setIsSidebarOpen }) => {
       <AppBar
         sx={{
           position: "static",
-          background: theme.palette.background.paper,
+          background: "none",
           boxShadow: "none",
         }}
       >
